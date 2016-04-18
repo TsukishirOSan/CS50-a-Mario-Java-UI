@@ -8,13 +8,13 @@ Write, in a file called mario.c in your ~/workspace/pset1 directory, a program t
 
 username@ide50:~/workspace/pset1 $ ./mario
 height: 8
-       ##
-      ###
-     ####
-    #####
-   ######
-  #######
- ########
+*******##
+******###
+*****####
+****#####
+***######
+**#######
+*########
 #########
 Note that the rightmost two columns of blocks must be of the same height. No need to generate the pipe, clouds, numbers, text, or Mario himself.
 
