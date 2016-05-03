@@ -1,6 +1,7 @@
 package com.edx;
 import java.io.File;
 
+
 // Constructor. Nothing much to say here, as it is only and only written to get the image to display and return
 // it without issues
 public class Tools {
