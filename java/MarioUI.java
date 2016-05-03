@@ -4,7 +4,6 @@ import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-
 public class MarioUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
@@ -24,7 +23,7 @@ public class MarioUI extends JFrame {
 	// constructor. Inheritance of mother class Mario aka controller
 	// the enumeration made in the comments were for me to not lose myself between classes. Bookmarks of sorts
 	public MarioUI(Mario mario){
-		//window
+		// window aka Frame
 		super();// calls same method in mother class
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setTitle("Itsa Mario");
@@ -65,4 +64,3 @@ public class MarioUI extends JFrame {
     	return this.abstractPyramid;
 	}
 }
-
