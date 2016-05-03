@@ -12,10 +12,11 @@ import javax.swing.JPanel;
 
 // Everything that happens within tmy panel is being taken care of here
 public class MarioImage extends JPanel{
-
+    
     /**
 	 * 
 	 */
+	 
 	private static final long serialVersionUID = 1L;
 	
 	// I need my Mario Frame where my panels are  
@@ -38,7 +39,7 @@ public class MarioImage extends JPanel{
     	   
     	   if(image2 == null){
     		   System.out.println("Image not found");
-    	}
+    	   }
     	   image = ImageIO.read(image2);
     	   //width if my image = 33
     	   //height of my image = 35 ==> No specific need apart from me deciding the margins left
@@ -53,7 +54,6 @@ public class MarioImage extends JPanel{
     // getting SOUTH Panel width and height and the .png width and height to implement 
 	// the list of coordinates as for where to "draw" the brick
 
-    
 	private void drawPyramid(Graphics g){
 		// -70 not to get stuck to the borders
 		int pmax_width = this.getWidth() - 70;
@@ -68,10 +68,10 @@ public class MarioImage extends JPanel{
 		
 		if(null != mc){
 			for (MarioCoords marioCoords : mc) {
-				//(0,0) pmax_width, delta_h
+				//(0,0) being top left corner, computing the actual coords in the JPanel
 				real_y = pmax_height - brick_h - (marioCoords.getY() * brick_h);
 				real_x = pmax_width - brick_w - (marioCoords.getX() * brick_w);
-				
+				// apply the compututation to the image, draw it within the panel
 				g.drawImage(image, real_x, real_y, null);
 			}
 		}
