@@ -1,10 +1,10 @@
 package com.edx;
 
 
-
 // OK so I need here what here. 2 ints to be stored and returned in an object to be stored 
 // in a list.
 // Do I need any other class: Basically no.
+
 public class MarioCoords{
 // Allows me to create an object that holds a tuple, which here represents the x and y coords of a brick
 // Reminder: Coords in CS ==> (0,0) is the top left corner
